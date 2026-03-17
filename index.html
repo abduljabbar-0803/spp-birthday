@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>A Grand Birthday Surprise for Shaa!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background music -->
+    <audio id="backgroundMusic" preload="auto">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- STEP 1: Welcome -->
+    <div class="step active" id="step1">
+        <div class="welcome-card">
+            <h1 class="welcome-title">You've got a surprise!</h1>
+            <p class="welcome-message">Click to start your birthday journey...</p>
+            <button id="startButton" class="action-button">Kindle the Hidden Flame
+
+!</button>
+        </div>
+    </div>
+
+    <!-- STEP 2: Envelope -->
+    <div class="step" id="step2">
+        <div class="envelope-container" id="envelopeContainer">
+            <div class="envelope">
+                <div class="envelope-back"></div>
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-seal"></div>
+            </div>
+            <p class="click-instruction">Tap the envelope to open 💌</p>
+        </div>
+    </div>
+
+    <!-- STEP 3: Letter -->
+    <div class="step" id="step3">
+        <div class="letter-container" id="letterContainer">
+            <div class="letter">
+                <p>Dearest <span id="letterName">Shaa</span>,</p>
+                <p>A secret eclipsing whispers awaits in the folds...</p>
+                <p>
+                     Happiest birthday to the cipher only my solitude deciphers.<br>
+May this veiled path coax a flicker from your hidden glow.                </p>
+                <button id="unfoldButton" class="action-button">Peel the Veil... Unravel the Echo. 🎁</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEP 4: Gifts sequence -->
+    <div class="step" id="step4">
+        <div class="gift-step" id="gift1">
+            <h1 class="gift-title">🌸  Flowers  for Shehzadi </h1>
+            <img src="flowers.jpg" alt="Flowers" class="gift-img float">
+            <p class="gift-note">Because you deserve something as pretty as you.</p>
+            <button class="big-btn" data-next="gift2">Embrace the Fading Petals
+
+🌺</button>
+        </div>
+
+        <div class="gift-step" id="gift2">
+            <h1 class="gift-title">🍫 Your favourite chocolates</h1>
+            <img src="chocolates.jpg" alt="Chocolates" class="gift-img float">
+            <p class="gift-note"> ~your absolute fave ❤️</p>
+            <button class="big-btn" data-next="gift3">Unwrap Chocolates</button>
+        </div>
+
+        <div class="gift-step" id="gift3">
+            <h1 class="gift-title">🌺 Gajra for your beautiful hands</h1>
+            <img src="gajra.jpg" alt="Gajra" class="gift-img float">
+            <p class="gift-note">Imagine me gently putting it on your wrist.</p>
+            <button class="big-btn" data-next="gift4">Wear Gajra</button>
+        </div>
+
+        <div class="gift-step" id="gift4">
+            <h1 class="gift-title">🧇 Belgian waffles treat!</h1>
+            <img src="waffles.jpg" alt="waffles" class="gift-img float">
+
+            <p class="gift-note">Crispy outside, soft inside – just how you love them.</p>
+            <button class="big-btn" data-next="gift5">Go To Final Gift 💝</button>
+        </div>
+
+        <div class="gift-step" id="gift5">
+            <h1 class="gift-title">🎁 final step</h1>
+            <p class="gift-note">Silent oath: absent from peaks, eternal in valleys where echoes fade alone.
+
+</p>
+            <button class="big-btn" id="goToCake">See Your Cake 🎂</button>
+        </div>
+    </div>
+
+    <!-- STEP 5: Cake (candles + cutting) -->
+    <div class="step" id="step5">
+        <div class="cake-container">
+            <h1 class="gift-title">🎂 Your birthday cake</h1>
+            <p class="cake-instructions">
+                Step 1: Tap each candle to blow it out. 🕯️<br>
+                Step 2: Drag your finger across the cake to cut your slice. 🔪
+            </p>
+            <canvas id="cakeCanvas" width="500" height="280"></canvas>
+            <p class="cake-note" id="cakeNote"></p>
+        </div>
+    </div>
+
+    <!-- STEP 6: Final message -->
+    <div class="step" id="step6">
+        <div class="celebration-container">
+            <div class="celebration-card">
+                <div class="sub-greeting">For my cutie pie </div>
+                <div id="finalGreeting" class="main-greeting"></div>
+                <p style="margin-top:15px;font-size:0.95rem;">
+              In the veiled hour when echoes converge, I'll haunt your periphery, unchained.
+                </p>
+                <p style="margin-top:5px;font-size:0.95rem;opacity:0.9;">
+                    Until then,Gratitude for the silent reveries. 💖
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
